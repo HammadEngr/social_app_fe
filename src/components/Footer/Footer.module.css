@@ -1,0 +1,8 @@
+.f_box {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+  background-color: var(--fg-color);
+  color: var(--bg-color);
+  width: 100%;
+}

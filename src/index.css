@@ -1,0 +1,51 @@
+:root {
+  --dark-fg-color: rgb(230, 230, 230);
+  --dark-bg-color: rgb(0, 0, 0);
+
+  --light-fg-color: black;
+  --light-bg-color: rgb(230, 230, 230);
+}
+
+.dark {
+  --fg-color: var(--dark-fg-color);
+  --bg-color: var(--dark-bg-color);
+}
+
+.light {
+  --fg-color: var(--light-fg-color);
+  --bg-color: var(--light-bg-color);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* html{
+    width: 100vw;
+    height: 100vh;
+} */
+
+body,
+#root {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+
+  /* height: 100%; */
+  /* width: 100%; */
+
+  min-height: 100vh;
+
+  background-color: var(--bg-color);
+  color: var(--fg-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}

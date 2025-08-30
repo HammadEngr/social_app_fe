@@ -1,0 +1,35 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.btn {
+  width: 150px;
+  height: 40px;
+  border-radius: 40px;
+  background-color: var(--fg-color);
+  color: var(--bg-color);
+}
+.btn_sm {
+  width: 70px;
+  height: 25px;
+  border-radius: 10px;
+  background-color: var(--fg-color);
+  color: var(--bg-color);
+}
+.l_box {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: space-between;
+  width: fit-content;
+}
+.l_box label {
+  width: 100px;
+}
+form {
+  margin-bottom: 10px;
+}
