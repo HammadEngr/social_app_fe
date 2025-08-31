@@ -1,21 +1,3 @@
-:root {
-  --dark-fg-color: rgb(230, 230, 230);
-  --dark-bg-color: rgb(0, 0, 0);
-
-  --light-fg-color: black;
-  --light-bg-color: rgb(230, 230, 230);
-}
-
-.dark {
-  --fg-color: var(--dark-fg-color);
-  --bg-color: var(--dark-bg-color);
-}
-
-.light {
-  --fg-color: var(--light-fg-color);
-  --bg-color: var(--light-bg-color);
-}
-
 * {
   padding: 0;
   margin: 0;

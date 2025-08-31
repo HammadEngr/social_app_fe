@@ -1,10 +1,10 @@
 import { useState } from "react";
-import { BrowserRouter } from "react-router-dom";
-import { useTheme } from "../contexts/ThemeContext";
-import styles from "./App.module.css";
-import Layout from "../Layout/Layout";
-import Home from "./Home/Home";
-import { Routes, Route } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Signup from "./components/signup/Signup";
+import { useTheme } from "./contexts/ThemeContext";
+import Layout from "./Layout/Layout";
+import Home from "./pages/Home";
+// import Home
 
 function App() {
   const [count, setCount] = useState(0);
@@ -15,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route path="/" element={<Home />} />
+          <Route path="/signup" element={<Signup />} />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -1,0 +1,11 @@
+/* temporary import, import colortheme at the end */
+@import url("../../globalStyles/colors.css");
+
+.wrap {
+  padding: 16px;
+  border-style: solid;
+  border-color: var(--border-color);
+  border-width: var(--border-width);
+  border-radius: var(--wrapper-radiun);
+  box-shadow: var(--box-shadow);
+}

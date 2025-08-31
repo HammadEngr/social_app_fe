@@ -1,0 +1,65 @@
+@import url("./colors.css");
+
+:root {
+  --dark-fg: var(--blue-500);
+  --dark-bg: var(--slate-950);
+  --dark-border: var(--slate-700);
+  --dark-heading: var(--blue-500);
+  --dark-form-text: var(--neutral-400);
+  --dark-bg-input: var(--slate-800);
+  --dark-bg-input-focus: var(--slate-900);
+  --dark-border-input-focus: var(--neutral-600);
+  --dark-shadow-input: none;
+  --dark-box-shadow: none;
+  --dark-text-color: var(--neutral-400);
+  --dark-hr: var(--slate-700);
+
+  --light-fg: var(--blue-600);
+  --light-bg: var(--zinc-50);
+  --light-border: var(--zinc-300);
+  --light-heading: var(--blue-500);
+  --light-form-text: var(--neutral-950);
+  --light-bg-input: var(--slate-200);
+  --light-bg-input-focus: var(--slate-300);
+  --light-border-input-focus: var(--neutral-400);
+  --light-shadow-input: none;
+  --light-box-shadow: 0 0 1px 1px var(--slate-300);
+  --light-text-color: var(--neutral-950);
+  --light-hr: var(--zinc-300);
+}
+
+.dark {
+  --fg-color: var(--dark-fg);
+  --bg-color: var(--dark-bg);
+  --border-color: var(--dark-border);
+  --heading-color: var(--dark-heading);
+  --form-text-color: var(--dark-form-text);
+  --input-bg-color: var(--dark-bg-input);
+  --input-bg-focus-color: var(--dark-bg-input-focus);
+  --input-border-focus-color: var(--dark-border-input-focus);
+  --input-shadow: var(--dark-shadow-input);
+  --box-shadow: var(--dark-box-shadow);
+  --text-color: var(--dark-text-color);
+  --btn-text-color: var(--neutral-50);
+  --btn-bg-color: var(--green-500);
+  --btn-bg-color-hover: var(--green-600);
+  --hr-color: var(--dark-hr);
+}
+
+.light {
+  --fg-color: var(--light-fg);
+  --bg-color: var(--light-bg);
+  --border-color: var(--light-border);
+  --heading-color: var(--light-heading);
+  --form-text-color: var(--light-form-text);
+  --input-bg-color: var(--light-bg-input);
+  --input-bg-focus-color: var(--light-bg-input-focus);
+  --input-border-focus-color: var(--light-border-input-focus);
+  --input-shadow: var(--light-shadow-input);
+  --box-shadow: var(--light-box-shadow);
+  --text-color: var(--light-text-color);
+  --btn-text-color: var(--neutral-50);
+  --btn-bg-color: var(--green-500);
+  --btn-bg-color-hover: var(--green-600);
+  --hr-color: var(--light-hr);
+}

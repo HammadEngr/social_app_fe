@@ -1,0 +1,26 @@
+:root {
+  --bp-sm: 640px;
+  --bp-md: 768px;
+  --bp-lg: 1024px;
+  --bp-xl: 1280px;
+  --bp-2xl: 1536px;
+
+  --wrapper-radiun: 5px;
+  --border-width: 1px;
+  --border-radius: 5px;
+
+  --input-indent: 5px;
+  --input-radius: 5px;
+  --letter-spacing: 1px;
+  --input-border-width: 1px;
+
+  --flex-gap: 10px;
+
+  --font-xs: 0.75rem; /* 12px */
+  --font-sm: 0.875rem; /* 14px */
+  --font-md: 1rem; /* 16px */
+  --font-lg: 1.25rem; /* 20px */
+  --font-xl: 1.5rem; /* 24px */
+  --font-2xl: 2rem; /* 32px */
+  --font-3xl: 2.5rem; /* 40px */
+}

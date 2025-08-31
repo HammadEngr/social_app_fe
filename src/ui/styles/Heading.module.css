@@ -1,0 +1,20 @@
+@import url("../../globalStyles/colors.css");
+
+.heading_cl {
+  color: var(--dark-heading);
+  font-weight: bold;
+  font-family: sans-serif;
+  text-align: center;
+}
+.sm {
+  font-size: var(--font-sm);
+}
+.md {
+  font-size: var(--font-md);
+}
+.lg {
+  font-size: var(--font-lg);
+}
+.xl {
+  font-size: var(--font-xl);
+}

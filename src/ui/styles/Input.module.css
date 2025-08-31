@@ -1,0 +1,30 @@
+@import url("../../globalStyles/colors.css");
+
+.in_check {
+  height: 12px;
+  width: 12px;
+}
+
+.in_cl {
+  height: 40px;
+  width: 100%;
+
+  outline: none;
+  border-style: none;
+  border-radius: var(--input-radius);
+
+  text-indent: var(--input-indent);
+  letter-spacing: var(--letter-spacing);
+
+  color: var(--form-text-color);
+  background-color: var(--input-bg-color);
+}
+
+.in_cl:focus,
+.in_cl:hover {
+  border-style: solid;
+  border-width: var(--input-border-width);
+  border-color: var(--input-border-focus-color);
+  background-color: var(--input-bg-focus-color);
+  box-shadow: var(--input-shadow);
+}

@@ -1,0 +1,37 @@
+.form_wrap {
+  display: flex;
+  flex-direction: column;
+  gap: var(--flex-gap);
+}
+.hr_cl {
+  border: none;
+  height: 1px;
+  background-color: var(--hr-color);
+}
+.terms_cl {
+  display: flex;
+  align-items: center;
+  gap: var(--flex-gap);
+  width: 100%;
+}
+.terms_cl label {
+  color: var(--text-color);
+}
+.gender_cl {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--flex-gap);
+}
+.gender_cl_type {
+  padding: 10px 16px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--hr-color);
+  border-radius: var(--border-radius);
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

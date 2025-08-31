@@ -1,0 +1,25 @@
+.form_cl {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--flex-gap);
+  width: 500px;
+}
+
+@media (max-width: 1280px) {
+  .form_cl {
+    width: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .form_cl {
+    width: 400px;
+  }
+}
+
+@media (max-width: 640px) {
+  .form_cl {
+    width: 300px;
+  }
+}

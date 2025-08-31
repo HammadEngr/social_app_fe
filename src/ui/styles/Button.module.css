@@ -1,0 +1,69 @@
+.btn_cl {
+  background-color: var(--btn-bg-color);
+  color: var(--btn-text-color);
+  border-radius: 5px;
+  border: none;
+}
+.btn_cl:hover {
+  background-color: var(--btn-bg-color-hover);
+}
+.sq {
+  height: 25px;
+  width: 25px;
+  font-size: var(--font-xs);
+}
+.mi {
+  height: 25px;
+  width: 60px;
+  font-size: var(--font-xs);
+}
+.sm {
+  height: 30px;
+  width: 100px;
+  font-size: var(--font-sm);
+}
+.md {
+  height: 40px;
+  width: 170px;
+  font-size: var(--font-md);
+  font-weight: bold;
+}
+
+.lg {
+  height: 50px;
+  width: 240px;
+  font-size: var(--font-lg);
+  font-weight: bold;
+}
+.xl {
+  height: 60px;
+  width: 310px;
+  font-size: var(--font-xl);
+  font-weight: bold;
+}
+
+@media (max-width: 1280px) {
+  .md {
+    font-size: var(--font-md);
+  }
+}
+
+@media (max-width: 1024px) {
+  .md {
+    width: 140px;
+    font-size: var(--font-md);
+  }
+}
+
+@media (max-width: 768px) {
+  .md {
+    width: 120px;
+    font-size: var(--font-sm);
+  }
+}
+
+@media (max-width: 640px) {
+  .md {
+    width: 100px;
+  }
+}
