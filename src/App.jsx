@@ -1,21 +1,31 @@
-import { useState } from "react";
+import { lazy } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Signup from "./components/signup/Signup";
-import { useTheme } from "./contexts/ThemeContext";
 import Layout from "./Layout/Layout";
-import Home from "./pages/Home";
-// import Home
+import PageLoader from "./Layout/PageLoader";
+import SignupSkeleton from "./ui/skeletons/SignupSkeleton";
+const Home = lazy(() => import("./pages/Home"));
+const Signup = lazy(() => import("./components/signup/Signup"));
+const Signin = lazy(() => import("./components/signin/Signin"));
 
 function App() {
-  const [count, setCount] = useState(0);
-  const { toggleTheme } = useTheme();
-
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route path="/" element={<Home />} />
-          <Route path="/signup" element={<Signup />} />
+          <Route path="/" element={<PageLoader component={Home} />} />
+          <Route
+            path="/signup"
+            element={
+              <PageLoader component={Signup} skeleton={SignupSkeleton} />
+            }
+          />
+          <Route
+            path="/signin"
+            element={
+              <Signin />
+              // <PageLoader component={Signup} skeleton={SignupSkeleton} />
+            }
+          />
         </Route>
       </Routes>
     </BrowserRouter>

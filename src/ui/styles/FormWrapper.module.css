@@ -8,4 +8,23 @@
   border-width: var(--border-width);
   border-radius: var(--wrapper-radiun);
   box-shadow: var(--box-shadow);
+  width: 500px;
+}
+
+@media (max-width: 1280px) {
+  .wrap {
+    width: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrap {
+    width: 400px;
+  }
+}
+
+@media (max-width: 640px) {
+  .wrap {
+    width: 300px;
+  }
 }

@@ -13,6 +13,7 @@
   --dark-box-shadow: none;
   --dark-text-color: var(--neutral-400);
   --dark-hr: var(--slate-700);
+  --dark-bg-skeleton: var(--slate-800);
 
   --light-fg: var(--blue-600);
   --light-bg: var(--zinc-50);
@@ -26,6 +27,7 @@
   --light-box-shadow: 0 0 1px 1px var(--slate-300);
   --light-text-color: var(--neutral-950);
   --light-hr: var(--zinc-300);
+  --light-bg-skeleton: var(--slate-200);
 }
 
 .dark {
@@ -40,10 +42,14 @@
   --input-shadow: var(--dark-shadow-input);
   --box-shadow: var(--dark-box-shadow);
   --text-color: var(--dark-text-color);
+  --hr-color: var(--dark-hr);
+  --skeleton-bg-color: var(--dark-bg-skeleton);
+
+  /* direct */
   --btn-text-color: var(--neutral-50);
   --btn-bg-color: var(--green-500);
   --btn-bg-color-hover: var(--green-600);
-  --hr-color: var(--dark-hr);
+  --text-highlight: var(--blue-500);
 }
 
 .light {
@@ -58,8 +64,12 @@
   --input-shadow: var(--light-shadow-input);
   --box-shadow: var(--light-box-shadow);
   --text-color: var(--light-text-color);
+  --hr-color: var(--light-hr);
+  --skeleton-bg-color: var(--light-bg-skeleton);
+
+  /* direct */
   --btn-text-color: var(--neutral-50);
   --btn-bg-color: var(--green-500);
   --btn-bg-color-hover: var(--green-600);
-  --hr-color: var(--light-hr);
+  --text-highlight: var(--blue-500);
 }

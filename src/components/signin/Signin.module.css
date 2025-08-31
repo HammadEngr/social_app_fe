@@ -1,0 +1,11 @@
+.b_links {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  text-decoration: none;
+  color: var(--form-text-color);
+}
+.b_links a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

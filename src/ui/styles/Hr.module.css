@@ -1,0 +1,6 @@
+.hr_cl {
+  border: none;
+  height: 1px;
+  background-color: var(--hr-color);
+  width: 100%;
+}

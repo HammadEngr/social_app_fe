@@ -5,12 +5,13 @@ import Heading from "../../ui/components/Heading";
 import Input from "../../ui/components/Input";
 import Label from "../../ui/components/Label";
 import styles from "./signup.module.css";
+import Hr from "../../ui/components/Hr";
 
 function Signup() {
   return (
     <FormWrapper className={styles.form_wrap}>
       <Heading title="Sign Up" size="lg" />
-      <hr className={styles.hr_cl} />
+      <Hr />
       <Form action="">
         <Input
           type="text"
