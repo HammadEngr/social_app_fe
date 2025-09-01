@@ -1,7 +1,15 @@
 import React from "react";
 import styles from "../styles/Input.module.css";
 
-function Input({ type = "text", id, name, className, placeholder, onChange }) {
+function Input({
+  type = "text",
+  id,
+  name,
+  className,
+  placeholder,
+  required,
+  onChange,
+}) {
   let customClass;
   if (type === "checkbox" || type === "radio") {
     customClass = `${className} ${styles.in_check}`;
@@ -16,6 +24,7 @@ function Input({ type = "text", id, name, className, placeholder, onChange }) {
       placeholder={placeholder}
       className={customClass}
       onChange={onchange}
+      required={required}
     />
   );
 }

@@ -1,10 +1,10 @@
-import styles from "./Signin.module.css";
-import FormWrapper from "../../ui/components/FormWrapper";
-import Form from "../../ui/components/Form";
-import Input from "../../ui/components/Input";
 import Button from "../../ui/components/Button";
+import Form from "../../ui/components/Form";
+import FormWrapper from "../../ui/components/FormWrapper";
 import Heading from "../../ui/components/Heading";
 import Hr from "../../ui/components/Hr";
+import Input from "../../ui/components/Input";
+import styles from "./Signin.module.css";
 
 function Signin() {
   return (
@@ -12,8 +12,13 @@ function Signin() {
       <Form>
         <Heading title="Sign In" />
         <Hr />
-        <Input type="text" id="email" placeholder="Email" />
-        <Input type="text" id="password" placeholder="Password" />
+        <Input type="text" id="email" placeholder="Email" required={true} />
+        <Input
+          type="password"
+          id="password"
+          placeholder="Password"
+          required={true}
+        />
         <Button title="Sign In" size="sm" type="submit" />
       </Form>
       <div className={styles.b_links}>

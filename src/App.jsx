@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "./Layout/Layout";
 import PageLoader from "./Layout/PageLoader";
 import SignupSkeleton from "./ui/skeletons/SignupSkeleton";
+import SigninSkeleton from "./ui/skeletons/SIgninSkeleton";
 const Home = lazy(() => import("./pages/Home"));
 const Signup = lazy(() => import("./components/signup/Signup"));
 const Signin = lazy(() => import("./components/signin/Signin"));
@@ -22,10 +23,10 @@ function App() {
           <Route
             path="/signin"
             element={
-              <Signin />
-              // <PageLoader component={Signup} skeleton={SignupSkeleton} />
+              <PageLoader component={Signin} skeleton={SigninSkeleton} />
             }
           />
+          {/* <Route path="/skeleton" element={<SigninSkeleton />} /> */}
         </Route>
       </Routes>
     </BrowserRouter>
