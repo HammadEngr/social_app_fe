@@ -50,6 +50,7 @@
   --btn-bg-color: var(--green-500);
   --btn-bg-color-hover: var(--green-600);
   --text-highlight: var(--blue-500);
+  --error-color: var(--red-500);
 }
 
 .light {
@@ -72,4 +73,5 @@
   --btn-bg-color: var(--green-500);
   --btn-bg-color-hover: var(--green-600);
   --text-highlight: var(--blue-500);
+  --error-color: var(--red-500);
 }

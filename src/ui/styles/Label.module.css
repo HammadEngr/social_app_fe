@@ -1,3 +1,4 @@
 .label_cl {
   color: var(--form-text-color);
+  font-family: inherit;
 }

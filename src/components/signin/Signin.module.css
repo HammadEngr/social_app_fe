@@ -9,3 +9,7 @@
   text-decoration: underline;
   cursor: pointer;
 }
+.err_cl {
+  color: var(--error-color);
+  font-size: var(--font-sm);
+}

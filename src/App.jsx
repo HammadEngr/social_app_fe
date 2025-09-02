@@ -1,5 +1,11 @@
 import { lazy } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter,
+  Route,
+  Routes,
+  RouterProvider,
+  createBrowserRouter,
+} from "react-router-dom";
 import Layout from "./Layout/Layout";
 import PageLoader from "./Layout/PageLoader";
 import SignupSkeleton from "./ui/skeletons/SignupSkeleton";
@@ -8,28 +14,52 @@ const Home = lazy(() => import("./pages/Home"));
 const Signup = lazy(() => import("./components/signup/Signup"));
 const Signin = lazy(() => import("./components/signin/Signin"));
 
+const router = createBrowserRouter([
+  {
+    element: <Layout />,
+    children: [
+      {
+        path: "/",
+        element: <PageLoader component={Home} />,
+        errorElement: <p>Error</p>,
+      },
+      {
+        path: "/signup",
+        element: <PageLoader component={Signup} skeleton={SignupSkeleton} />,
+        errorElement: <p>Error</p>,
+      },
+      {
+        path: "/signin",
+        element: <PageLoader component={Signin} skeleton={SigninSkeleton} />,
+        errorElement: <p>Error</p>,
+      },
+    ],
+  },
+]);
+
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route path="/" element={<PageLoader component={Home} />} />
-          <Route
-            path="/signup"
-            element={
-              <PageLoader component={Signup} skeleton={SignupSkeleton} />
-            }
-          />
-          <Route
-            path="/signin"
-            element={
-              <PageLoader component={Signin} skeleton={SigninSkeleton} />
-            }
-          />
-          {/* <Route path="/skeleton" element={<SigninSkeleton />} /> */}
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <RouterProvider router={router} />
+    // <BrowserRouter>
+    //   <Routes>
+    //     <Route path="/" element={<Layout />}>
+    //       <Route path="/" element={<PageLoader component={Home} />} />
+    //       <Route
+    //         path="/signup"
+    //         element={
+    //           <PageLoader component={Signup} skeleton={SignupSkeleton} />
+    //         }
+    //       />
+    //       <Route
+    //         path="/signin"
+    //         element={
+    //           <PageLoader component={Signin} skeleton={SigninSkeleton} />
+    //         }
+    //       />
+    //       {/* <Route path="/skeleton" element={<SigninSkeleton />} /> */}
+    //     </Route>
+    //   </Routes>
+    // </BrowserRouter>
   );
 }
 

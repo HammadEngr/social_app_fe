@@ -117,9 +117,10 @@ const api_request_fx = async (options) => {
       // that falls out of the range of 2xx
       console.log(error.response);
 
-      throw new Error(
-        `Server Error: ${error.response.status} - ${error.response.statusText}`
-      );
+      // throw new Error(
+      //   `Server Error: ${error.response.status} - ${error.response.statusText}`
+      // );
+      return error.response;
     } else if (error.request) {
       // The request was made but no response was received
       throw new Error("Network Error: No response received from server.");

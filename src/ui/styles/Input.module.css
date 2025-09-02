@@ -8,6 +8,7 @@
 .in_cl {
   height: 40px;
   width: 100%;
+  font-family: inherit;
 
   outline: none;
   border-style: none;
@@ -27,4 +28,13 @@
   border-color: var(--input-border-focus-color);
   background-color: var(--input-bg-focus-color);
   box-shadow: var(--input-shadow);
+}
+
+.error_cl {
+  border-color: var(--input-error-color) !important;
+  border-width: 2px !important;
+}
+.error_txt {
+  color: var(--error-color);
+  font-size: var(--font-sm);
 }
