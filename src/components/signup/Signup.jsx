@@ -47,10 +47,6 @@ function Signup() {
     formState: { errors },
   } = useForm({ resolver: yupResolver(schema) });
 
-  /**
-   * Form submit handler
-   * @param {*} formData
-   */
   const onSubmit = async (formData) => {
     const requestObject = {
       method: "POST",
@@ -63,7 +59,7 @@ function Signup() {
     console.log(response);
   };
   return (
-    <FormWrapper className={styles.form_wrap}>
+    <FormWrapper>
       <Heading title="Sign Up" size="lg" />
       <Hr />
       <Form onSubmit={handleSubmit(onSubmit)}>
@@ -74,6 +70,7 @@ function Signup() {
           placeholder="First Name"
           register={register}
           error={errors.firstName}
+          autoFocus={true}
         />
         <Input
           id="l-name"

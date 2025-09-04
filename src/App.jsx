@@ -13,6 +13,12 @@ import SigninSkeleton from "./ui/skeletons/SIgninSkeleton";
 const Home = lazy(() => import("./pages/Home"));
 const Signup = lazy(() => import("./components/signup/Signup"));
 const Signin = lazy(() => import("./components/signin/Signin"));
+const PasswordRecover = lazy(() =>
+  import("./components/PasswordRecover/PasswordRecover")
+);
+const ResetPasswordForm = lazy(() =>
+  import("./components/PasswordRecover/ResetPasswordForm")
+);
 
 const router = createBrowserRouter([
   {
@@ -31,6 +37,16 @@ const router = createBrowserRouter([
       {
         path: "/signin",
         element: <PageLoader component={Signin} skeleton={SigninSkeleton} />,
+        errorElement: <p>Error</p>,
+      },
+      {
+        path: "/recover",
+        element: <PasswordRecover />,
+        errorElement: <p>Error</p>,
+      },
+      {
+        path: "/recover/resetpassword/:token",
+        element: <ResetPasswordForm />,
         errorElement: <p>Error</p>,
       },
     ],

@@ -2,6 +2,9 @@
 @import url("../../globalStyles/colors.css");
 
 .wrap {
+  display: flex;
+  flex-direction: column;
+  gap: var(--flex-gap);
   padding: 16px;
   border-style: solid;
   border-color: var(--border-color);

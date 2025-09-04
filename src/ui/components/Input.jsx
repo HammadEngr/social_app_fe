@@ -2,8 +2,17 @@ import React from "react";
 import styles from "../styles/Input.module.css";
 
 function Input(props) {
-  const { id, name, type, className, value, placeholder, register, error } =
-    props;
+  const {
+    id,
+    name,
+    type,
+    className,
+    value,
+    placeholder,
+    register,
+    error,
+    autoFocus,
+  } = props;
   let customClass;
   if (type === "checkbox" || type === "radio") {
     customClass = `${className} ${styles.in_check}`;
@@ -25,6 +34,7 @@ function Input(props) {
         className={customClass}
         onChange={onchange}
         {...register(name)}
+        autoFocus={autoFocus}
       />
       {error ? <p className={styles.error_txt}>{error.message}</p> : null}
     </>
