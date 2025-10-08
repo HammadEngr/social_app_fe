@@ -1,6 +1,7 @@
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
+import { Link } from "react-router-dom";
 import * as yup from "yup";
 import Button from "../../ui/components/Button";
 import Form from "../../ui/components/Form";
@@ -91,8 +92,8 @@ function Signin() {
         <Button title="Sign In" size="sm" type="submit" />
       </Form>
       <div className={styles.b_links}>
-        <a>Forgot Password</a>
-        <a>Create new account</a>
+        <Link to="/recover">Forgot Password</Link>
+        <Link to="/signup">Create new account</Link>
       </div>
     </FormWrapper>
   );

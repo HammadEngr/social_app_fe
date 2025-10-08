@@ -1,13 +1,50 @@
-.h_box {
+:root {
+  --header_height: 50px;
+}
+.header_cl {
   display: flex;
   width: 100%;
-  height: 60px;
+  height: var(--header_height);
   align-items: center;
   justify-content: space-between;
   background-color: var(--fg-color);
   color: var(--bg-color);
   padding: 0 10px;
 }
+.left {
+  background: black;
+}
+
+.mid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* gap: var(--flex-gap); */
+}
+
+.nav_link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 0 30px;
+  height: var(--header_height);
+}
+
+.nav_link:hover {
+  background-color: var(--bg-color);
+  color: var(--fg-color);
+}
+
+.isActive {
+  background-color: var(--bg-color);
+  color: var(--fg-color);
+}
+
+/* .right {
+  background-color: red;
+} */
+
 .btn {
   width: 100px;
   height: 35px;

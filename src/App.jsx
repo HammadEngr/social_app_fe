@@ -49,6 +49,11 @@ const router = createBrowserRouter([
         element: <ResetPasswordForm />,
         errorElement: <p>Error</p>,
       },
+      {
+        path: "/friends",
+        element: <p>Friends</p>,
+        errorElement: <p>Error</p>,
+      },
     ],
   },
 ]);

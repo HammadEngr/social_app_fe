@@ -1,0 +1,21 @@
+.wrap {
+  display: flex;
+  background-color: black;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+.dpd {
+  width: 200px;
+}
+.theme {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.theme_icon {
+  color: aqua;
+}

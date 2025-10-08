@@ -1,5 +1,6 @@
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
+import { useNavigate } from "react-router";
 import * as yup from "yup";
 import Button from "../../ui/components/Button";
 import Form from "../../ui/components/Form";
@@ -18,6 +19,7 @@ const searchUserSchema = yup.object({
 });
 
 function PasswordRecover() {
+  const navigate = useNavigate();
   const {
     register,
     handleSubmit,
@@ -58,7 +60,12 @@ function PasswordRecover() {
           autoFocus={true}
         />
         <div className={styles.btn_pr}>
-          <Button size="sm" title="Cancel" className={styles.btn_cl_pr} />
+          <Button
+            size="sm"
+            title="Cancel"
+            className={styles.btn_cl_pr}
+            onClick={() => navigate(-1)}
+          />
           <Button size="sm" title="Search" type="submit" />
         </div>
       </Form>

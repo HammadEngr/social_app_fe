@@ -1,10 +1,10 @@
 @import url("./colors.css");
 
 :root {
-  --dark-fg: var(--blue-500);
+  --dark-fg: var(--cyan-400);
   --dark-bg: var(--slate-950);
   --dark-border: var(--slate-700);
-  --dark-heading: var(--blue-500);
+  --dark-heading: var(--cyan-500);
   --dark-form-text: var(--neutral-400);
   --dark-bg-input: var(--slate-800);
   --dark-bg-input-focus: var(--slate-900);
@@ -15,10 +15,10 @@
   --dark-hr: var(--slate-700);
   --dark-bg-skeleton: var(--slate-800);
 
-  --light-fg: var(--blue-600);
+  --light-fg: var(--cyan-400);
   --light-bg: var(--zinc-50);
   --light-border: var(--zinc-300);
-  --light-heading: var(--blue-500);
+  --light-heading: var(--cyan-500);
   --light-form-text: var(--neutral-950);
   --light-bg-input: var(--slate-200);
   --light-bg-input-focus: var(--slate-300);
@@ -49,7 +49,7 @@
   --btn-text-color: var(--neutral-50);
   --btn-bg-color: var(--green-500);
   --btn-bg-color-hover: var(--green-600);
-  --text-highlight: var(--blue-500);
+  --text-highlight: var(--cyan-500);
   --error-color: var(--red-500);
 }
 
@@ -72,6 +72,6 @@
   --btn-text-color: var(--neutral-50);
   --btn-bg-color: var(--green-500);
   --btn-bg-color-hover: var(--green-600);
-  --text-highlight: var(--blue-500);
+  --text-highlight: var(--cyan-500);
   --error-color: var(--red-500);
 }
