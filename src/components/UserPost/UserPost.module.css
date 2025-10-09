@@ -1,0 +1,23 @@
+.post_ {
+  display: flex;
+  /* width: 30px; */
+  /* height: 30px; */
+  /* background-color: black; */
+  /* border-radius: 30px; */
+}
+.post_img {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.post_btn {
+  background-color: transparent;
+  height: 30px;
+  border-radius: 30px;
+  text-align: left;
+  text-indent: 10px;
+  cursor: pointer;
+  border: 0.5px black solid;
+  width: 100%;
+}
