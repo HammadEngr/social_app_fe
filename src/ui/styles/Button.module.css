@@ -1,46 +1,31 @@
 .btn_cl {
   background-color: var(--btn-bg-color);
   color: var(--btn-text-color);
-  border-radius: 5px;
   border: none;
   font-family: inherit;
 }
 .btn_cl:hover {
   background-color: var(--btn-bg-color-hover);
 }
-.sq {
-  height: 25px;
-  width: 25px;
-  font-size: var(--font-xs);
-}
-.mi {
-  height: 25px;
-  width: 60px;
-  font-size: var(--font-xs);
-}
+
 .sm {
   height: 30px;
-  width: 100px;
-  font-size: var(--font-sm);
+  width: 50px;
+  font-size: calc(1rem / var(--font-size-factor));
+  border-radius: calc(30px / var(--btn-radius-factor));
 }
 .md {
   height: 40px;
-  width: 170px;
-  font-size: var(--font-md);
-  font-weight: bold;
+  width: 70px;
+  font-size: 1rem;
+  border-radius: calc(40px / var(--btn-radius-factor));
 }
 
 .lg {
   height: 50px;
-  width: 240px;
-  font-size: var(--font-lg);
-  font-weight: bold;
-}
-.xl {
-  height: 60px;
-  width: 310px;
-  font-size: var(--font-xl);
-  font-weight: bold;
+  width: 100px;
+  font-size: calc(1rem * var(--font-size-factor));
+  border-radius: calc(50px / var(--btn-radius-factor));
 }
 
 @media (max-width: 1280px) {

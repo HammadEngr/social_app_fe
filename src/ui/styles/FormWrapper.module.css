@@ -11,6 +11,7 @@
   border-width: var(--border-width);
   border-radius: var(--wrapper-radiun);
   box-shadow: var(--box-shadow);
+  background-color: var(--fg-color);
   width: 500px;
 }
 

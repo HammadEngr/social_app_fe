@@ -7,7 +7,9 @@ import styles from "./Header.module.css";
 function Header() {
   return (
     <div className={styles.header_cl}>
-      <div className={styles.left}>Left</div>
+      <div className={styles.left}>
+        <p>Fleek</p>
+      </div>
       <div className={styles.mid}>
         <Tooltip title="Home" arrow={false}>
           <NavLink

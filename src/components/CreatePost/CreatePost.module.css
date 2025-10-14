@@ -1,0 +1,30 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.post_content {
+  min-height: 80px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+  outline: none;
+  background: #fff;
+  overflow-y: auto;
+  width: 100%;
+}
+
+.placeholder {
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  color: #aaa;
+  pointer-events: none;
+  font-size: 14px;
+}
+
+.btn {
+  width: 100% !important;
+}

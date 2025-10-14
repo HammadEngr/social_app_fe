@@ -5,17 +5,20 @@
   --bp-xl: 1280px;
   --bp-2xl: 1536px;
 
-  --wrapper-radiun: 5px;
+  --wrapper-radiun: 16px;
   --border-width: 1px;
-  --border-radius: 5px;
+  --border-radius: 16px;
+
+  --btn-radius-factor: 3;
 
   --input-indent: 5px;
-  --input-radius: 5px;
+  --input-radius: 8px;
   --letter-spacing: 1px;
   --input-border-width: 1px;
 
   --flex-gap: 10px;
 
+  --font-size-factor: 1.25;
   --font-xs: 0.75rem; /* 12px */
   --font-sm: 0.875rem; /* 14px */
   --font-md: 1rem; /* 16px */

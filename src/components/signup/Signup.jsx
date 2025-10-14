@@ -8,7 +8,7 @@ import Heading from "../../ui/components/Heading";
 import Hr from "../../ui/components/Hr";
 import Input from "../../ui/components/Input";
 import Label from "../../ui/components/Label";
-import api_request_fx from "../../utils/api_req";
+import callApi from "../../utils/callApi";
 import styles from "./signup.module.css";
 
 // form validation schema
@@ -55,7 +55,7 @@ function Signup() {
         ...formData,
       },
     };
-    const response = await api_request_fx(requestObject);
+    const response = await callApi(requestObject);
     console.log(response);
   };
   return (

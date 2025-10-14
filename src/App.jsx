@@ -19,39 +19,40 @@ const PasswordRecover = lazy(() =>
 const ResetPasswordForm = lazy(() =>
   import("./components/PasswordRecover/ResetPasswordForm")
 );
+const SelfView = lazy(() => import("./components/User/SelfView/SelfView"));
 
 const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <PageLoader component={Home} />,
+    errorElement: <p>Error</p>,
+  },
+  {
+    path: "/signup",
+    element: <PageLoader component={Signup} skeleton={SignupSkeleton} />,
+    errorElement: <p>Error</p>,
+  },
+  {
+    path: "/signin",
+    element: <PageLoader component={Signin} skeleton={SigninSkeleton} />,
+    errorElement: <p>Error</p>,
+  },
+  {
+    path: "/recover",
+    element: <PasswordRecover />,
+    errorElement: <p>Error</p>,
+  },
+  {
+    path: "/recover/resetpassword/:token",
+    element: <ResetPasswordForm />,
+    errorElement: <p>Error</p>,
+  },
   {
     element: <Layout />,
     children: [
       {
-        path: "/",
-        element: <PageLoader component={Home} />,
-        errorElement: <p>Error</p>,
-      },
-      {
-        path: "/signup",
-        element: <PageLoader component={Signup} skeleton={SignupSkeleton} />,
-        errorElement: <p>Error</p>,
-      },
-      {
-        path: "/signin",
-        element: <PageLoader component={Signin} skeleton={SigninSkeleton} />,
-        errorElement: <p>Error</p>,
-      },
-      {
-        path: "/recover",
-        element: <PasswordRecover />,
-        errorElement: <p>Error</p>,
-      },
-      {
-        path: "/recover/resetpassword/:token",
-        element: <ResetPasswordForm />,
-        errorElement: <p>Error</p>,
-      },
-      {
-        path: "/friends",
-        element: <p>Friends</p>,
+        path: "/user/self/:id",
+        element: <SelfView />,
         errorElement: <p>Error</p>,
       },
     ],

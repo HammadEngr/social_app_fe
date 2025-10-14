@@ -1,0 +1,7 @@
+/* ANT TOOL TIP CUSTOMISED */
+.ant-tooltip {
+  font-size: 12px;
+}
+.ant-tooltip-inner {
+  background-color: var(--stone-900) !important;
+}

@@ -1,77 +1,123 @@
 @import url("./colors.css");
 
 :root {
-  --dark-fg: var(--cyan-400);
-  --dark-bg: var(--slate-950);
-  --dark-border: var(--slate-700);
-  --dark-heading: var(--cyan-500);
-  --dark-form-text: var(--neutral-400);
-  --dark-bg-input: var(--slate-800);
-  --dark-bg-input-focus: var(--slate-900);
-  --dark-border-input-focus: var(--neutral-600);
+  /* ***************************DARK MODE********************************** */
+  /* main */
+  --dark-fg: var(--yellow-d);
+  --dark-bg: var(--stone-800);
+  --dark-heading: var(--stone-800);
+  --dark-text-color: var(--stone-800);
+  /* --dark-logo:var(); */
+
+  /* button */
+  --dark-btn-text: var(--yellow-d);
+  --dark-btn-bg: var(--stone-700);
+  --dark-btn-hover: var(--stone-900);
+
+  /* form */
+  --dark-form-text: var(--yellow-d);
+  --dark-bg-input: var(--stone-700);
+  --dark-bg-input-focus: var(--stone-900);
+  --dark-border-input-focus: var(--stone-600);
   --dark-shadow-input: none;
+
+  /* misc */
+  --dark-border: var(--stone-100);
   --dark-box-shadow: none;
-  --dark-text-color: var(--neutral-400);
-  --dark-hr: var(--slate-700);
+  --dark-hr: var(--stone-800);
   --dark-bg-skeleton: var(--slate-800);
 
-  --light-fg: var(--cyan-400);
-  --light-bg: var(--zinc-50);
-  --light-border: var(--zinc-300);
-  --light-heading: var(--cyan-500);
-  --light-form-text: var(--neutral-950);
-  --light-bg-input: var(--slate-200);
-  --light-bg-input-focus: var(--slate-300);
-  --light-border-input-focus: var(--neutral-400);
+  /* errors */
+  --dark-error: var(--red-500);
+
+  /* ******************************LIGHT MODE****************************** */
+  /* main */
+  --light-fg: var(--yellow-l);
+  --light-bg: var(--yellow-d);
+  --light-heading: var(--stone-800);
+  --light-text-color: var(--stone-900);
+  --light-text-sm: var(--stone-600);
+  --light-text-sm-light: var(--stone-400);
+  --light-logo: var(--stone-700);
+
+  /* button */
+  --light-btn-text: var(--stone-100);
+  --light-btn-bg: var(--stone-700);
+  --light-btn-hover: var(--stone-800);
+
+  /* form */
+  --light-form-text: var(--stone-950);
+  --light-bg-input: var(--stone-200);
+  --light-bg-input-focus: var(--stone-300);
+  --light-border-input-focus: var(--stone-500);
   --light-shadow-input: none;
-  --light-box-shadow: 0 0 1px 1px var(--slate-300);
-  --light-text-color: var(--neutral-950);
-  --light-hr: var(--zinc-300);
-  --light-bg-skeleton: var(--slate-200);
+
+  /* misc */
+  --light-border: var(--stone-700);
+  --light-box-shadow: 0 0px 6px var(--stone-400);
+  --light-hr: var(--stone-700);
+  --light-bg-skeleton: var(--stone-200);
+  /* errors */
+  --light-error: var(--red-500);
 }
 
 .dark {
+  /* main */
   --fg-color: var(--dark-fg);
   --bg-color: var(--dark-bg);
-  --border-color: var(--dark-border);
   --heading-color: var(--dark-heading);
+  --text-color: var(--dark-text-color);
+
+  /* button */
+  --btn-text-color: var(--dark-btn-text);
+  --btn-bg-color: var(--dark-btn-bg);
+  --btn-bg-color-hover: var(--dark-btn-hover);
+
+  /* form */
   --form-text-color: var(--dark-form-text);
   --input-bg-color: var(--dark-bg-input);
   --input-bg-focus-color: var(--dark-bg-input-focus);
   --input-border-focus-color: var(--dark-border-input-focus);
   --input-shadow: var(--dark-shadow-input);
+
+  /* misc */
+  --border-color: var(--dark-border);
   --box-shadow: var(--dark-box-shadow);
-  --text-color: var(--dark-text-color);
   --hr-color: var(--dark-hr);
   --skeleton-bg-color: var(--dark-bg-skeleton);
 
-  /* direct */
-  --btn-text-color: var(--neutral-50);
-  --btn-bg-color: var(--green-500);
-  --btn-bg-color-hover: var(--green-600);
-  --text-highlight: var(--cyan-500);
-  --error-color: var(--red-500);
+  /* errors */
+  --error-color: var(--dark-error);
 }
 
 .light {
+  /* main */
+  --logo: var(--light-logo);
   --fg-color: var(--light-fg);
   --bg-color: var(--light-bg);
-  --border-color: var(--light-border);
   --heading-color: var(--light-heading);
+  --text-color: var(--light-text-color);
+  --text-sm: var(--light-text-sm);
+  --text-sm-light: var(--light-text-sm-light);
+
+  /* button */
+  --btn-bg-color: var(--light-btn-bg);
+  --btn-text-color: var(--light-btn-text);
+  --btn-bg-color-hover: var(--light-btn-hover);
+
+  /* form */
   --form-text-color: var(--light-form-text);
   --input-bg-color: var(--light-bg-input);
   --input-bg-focus-color: var(--light-bg-input-focus);
   --input-border-focus-color: var(--light-border-input-focus);
   --input-shadow: var(--light-shadow-input);
+
+  /* misc */
+  --border-color: var(--light-border);
   --box-shadow: var(--light-box-shadow);
-  --text-color: var(--light-text-color);
   --hr-color: var(--light-hr);
   --skeleton-bg-color: var(--light-bg-skeleton);
 
-  /* direct */
-  --btn-text-color: var(--neutral-50);
-  --btn-bg-color: var(--green-500);
-  --btn-bg-color-hover: var(--green-600);
-  --text-highlight: var(--cyan-500);
-  --error-color: var(--red-500);
+  /* errors */
+  --error-color: var(--light-error);
 }

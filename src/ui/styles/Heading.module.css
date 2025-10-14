@@ -1,7 +1,7 @@
 @import url("../../globalStyles/colors.css");
 
 .heading_cl {
-  color: var(--dark-heading);
+  color: var(--heading-color);
   font-weight: bold;
   font-family: sans-serif;
   text-align: center;

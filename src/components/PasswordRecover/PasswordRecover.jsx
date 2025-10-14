@@ -8,7 +8,7 @@ import FormWrapper from "../../ui/components/FormWrapper";
 import Heading from "../../ui/components/Heading";
 import Hr from "../../ui/components/Hr";
 import Input from "../../ui/components/Input";
-import api_request_fx from "../../utils/api_req";
+import callApi from "../../utils/callApi";
 import styles from "./PasswordRecover.module.css";
 
 const searchUserSchema = yup.object({
@@ -35,7 +35,7 @@ function PasswordRecover() {
           email: formData.email_pr,
         },
       };
-      const response = await api_request_fx(requestObject);
+      const response = await callApi(requestObject);
       if (response.status === true && response.message === "User found") {
         setUserFound(true);
         setUserEmail(response.data.email);
@@ -62,11 +62,14 @@ function PasswordRecover() {
         <div className={styles.btn_pr}>
           <Button
             size="sm"
-            title="Cancel"
             className={styles.btn_cl_pr}
             onClick={() => navigate(-1)}
-          />
-          <Button size="sm" title="Search" type="submit" />
+          >
+            Cancel
+          </Button>
+          <Button size="sm" type="submit">
+            Search
+          </Button>
         </div>
       </Form>
     </FormWrapper>
